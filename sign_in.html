@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sign_in.js"></script>
+</head>
+
+<body>
+    <div id="formforstudents">
+        <div id="stud_id">
+            <label for="browser">Choose your browser from the list:</label>
+            <input list="browsers" name="browser" id="browser">
+            
+            <datalist id="browsers">
+              <option value="Edge">
+              <option value="Firefox">
+              <option value="Chrome">
+              <option value="Opera">
+              <option value="Safari">
+            </datalist> 
+            </div>
+        </div>
+        <div id="stud_name">
+            <input type="text" placeholder="Please enter your name">
+        </div>
+        <div id="studorteach">
+            <input type="radio" name="stud_or_teach_forstud" id="Student" value="Student" checked='True'>
+            <label for="Student">Student</label><br>
+            <input type="radio" name="stud_or_teach_forstud" id="Teacher" value="Teacher">
+            <label for="Teacher">Teacher</label><br>
+        </div>
+    </div>
+    <!-- <div id="teachersform">
+        <div id="teacher_name">
+            <input type="text" placeholder="Please enter your name">
+        </div>
+        <input type="number" placeholder="Enter your employee ID">
+        <div id="studorteach">
+            <input type="radio" name="stud_or_teach_forteach" id="Student" value="Student">
+            <label for="Student">Student</label><br>
+            <input type="radio" name="stud_or_teach_forteach" id="Teacher" value="Teacher" checked='True'>
+            <label for="Teacher">Teacher</label><br>
+        </div>
+    </div> -->
+    <button>Sign In</button>
+</body>
+
+</html>
